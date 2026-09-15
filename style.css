@@ -1,0 +1,202 @@
+/*-------------------------------------
+            MAIN BODY
+-------------------------------------*/
+ 
+body {
+    margin: 0;  
+    padding: 20px; 
+    font-family: Arial, sans-serif;     /* Sets clean, readable font */
+    background: linear-gradient(135deg, #0f0c20 0%, #1e1e2f 50%, #2a2a40 100%);     /* Dark theme gradient */
+    min-height: 100vh;      /* Ensures full screen height */
+    display: flex;      /* Enables Flexbox layout */
+    justify-content: center;    /* Horizontally center content */
+    align-items: center;    /* Vertically center content */
+    box-sizing: border-box;     /* Includes padding in width calculation */
+}
+
+.container {
+    width: 100%;
+    max-width: 750px;   /* Limits card max size */
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 24px;    /* Curved edges for modern design */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);     /* Elevated card shadow effect */
+    text-align: center;     /* Centers inner text */
+}
+
+.project-title {
+    color: #1e1e2f;
+    font-size: 30px;
+    font-weight: bold;  /* Bold text weight */
+    margin-bottom: 10px;
+}
+
+.paragraph {
+    color: #4a4a5a;
+    margin-bottom: 25px;
+    line-height: 1.6;   /* Increases line spacing */
+    font-size: 15px;
+}
+
+/*-------------------------------------
+            SCOREBOARD
+-------------------------------------*/
+
+.score {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;  /* Space between scores */
+    flex-wrap: wrap;    /* Wraps items on mobile */
+    margin-top: 10px;   
+}
+
+/*-------------------------------------
+    BATTLE ARENA (YOU VS BOT)
+-------------------------------------*/
+
+.battle-arena {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 16px;
+}
+
+.player-card {
+    display: flex;
+    flex-direction: column; /* Stacks label and icon vertically */
+    align-items: center;
+    gap: 6px;
+}
+
+.player-label {
+    font-weight: bold;
+    color: #2f3542;
+    font-size: 0.9rem;
+}
+
+.choice-icon {
+    width: 70px;
+    height: 70px;
+    background: #ffffff;
+    border-radius: 50%; /* Makes element a circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Circle drop shadow */
+}
+
+.vs-badge {
+    font-size: 1.5rem;  /* VS text size */
+    font-weight: 900;
+    color: #ff4757;
+    font-style: italic;
+}
+
+/*-------------------------------------
+            HAND IMAGE
+-------------------------------------*/
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #d7f4ff;
+    height: 500px;
+    border-radius: 20px;
+}
+
+img {
+     width: 100%;
+    height: auto;
+}
+
+/*-------------------------------------
+        BUTTONS & CONTROLS
+-------------------------------------*/
+
+.choose {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.rock,
+.paper,
+.scissors {
+    flex: 1;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #4277d8;
+    border: none;   /* Removes default border */
+    border-radius: 10px;
+    cursor: pointer;   /* Pointer cursor on hover */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 4px 10px rgba(66, 119, 216, 0.2);
+}
+
+.rock:hover,
+.paper:hover,
+.scissors:hover {
+    background-color: #2b5ac7;
+    box-shadow: 0 6px 15px rgba(66, 119, 216, 0.35);
+
+}
+
+.game {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates 2 equal-width columns */
+    gap: 10px;
+}
+
+#wins {
+    margin: 10px;
+    color: green;
+}
+
+#losses {
+    margin: 10px;
+    color: crimson;
+}
+
+#ties {
+    margin: 10px;
+    color: navy;
+}
+
+.reset {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ff4757;
+    background-color: transparent;
+    border: 2px solid #ff4757;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reset:hover {
+    background-color: #ff4757;
+    color: #ffffff;
+}
